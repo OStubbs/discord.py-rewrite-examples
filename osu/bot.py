@@ -2,7 +2,7 @@ import discord
 import asyncio
 import requests
 client = discord.Client()
-osuApiKey = "" #put your osu!api key here
+osuApiKey = "" #put your osu!api key here, could put it inside the osu function it doesn't have a major affect in this code.
 @client.event
 async def on_ready():
     print("Logged in as {0.user}".format(client))
