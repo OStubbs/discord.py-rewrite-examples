@@ -2,7 +2,7 @@ import discord
 import asyncio
 import requests
 client = discord.Client()
-osuApiKey = ""#put you osu!api key here
+osuApiKey = "" #put your osu!api key here
 @client.event
 async def on_ready():
     print("Logged in as {0.user}".format(client))
