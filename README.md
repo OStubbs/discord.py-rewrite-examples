@@ -1,6 +1,6 @@
 # discord.py-rewrite-examples
 
-Basic examples for discord.py-rewrite bots.
+Very basic examples for discord.py-rewrite bots.
 
 # Important info
 
