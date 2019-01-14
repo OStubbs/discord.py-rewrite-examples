@@ -2,7 +2,7 @@ import discord
 import asyncio
 import requests
 client = discord.Client()
-osuApiKey = "" #put your osu!api key here, could put it inside the osu function it doesn't have a major affect in this code.
+osu_api_key = "" #put your osu!api key here, could put it inside the osu function it doesn't have a major affect in this code.
 @client.event
 async def on_ready():
     print("Logged in as {0.user}".format(client))
@@ -19,7 +19,7 @@ async def on_message(message):
         
 @client.command(pass_context=True)
 async def osu(ctx, username:str):
-    parameters = dict(k=osuApiKey, u=username)
+    parameters = dict(k=osu_api_key, u=username)
     response = requests.get(url="https://osu.ppy.sh/api/get_user", params=parameters)
     data = response.json()
     profile = ""
